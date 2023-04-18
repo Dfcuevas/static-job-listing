@@ -1,3 +1,84 @@
-article {
-  background: cyan;
+.container {
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.first-span {
+  color: var(--desaturated-dark-cyan);
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.second-span {
+  text-transform: uppercase;
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.third-span {
+  text-transform: uppercase;
+  background-color: var(--very-dark-grayish-cyan);
+  color: white;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.border-left {
+  border-left: 5px solid var(--desaturated-dark-cyan);
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.position-container {
+  font-weight: 700;
+  color: var(--very-dark-grayish-cyan);
+  cursor: pointer;
+}
+
+.position-container:hover {
+  color: var(--desaturated-dark-cyan);
+}
+
+.features-container ul {
+  color: var(--dark-grayish-cyan);
+  display: flex;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.no-list {
+  list-style-type: none;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-side button {
+  cursor: pointer;
+  border: none;
+  color: var(--desaturated-dark-cyan);
+  background-color: var(--light-grayish-cyan);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.right-side button:hover {
+  background-color: var(--desaturated-dark-cyan);
+  color: var(--light-grayish-cyan);
 }
