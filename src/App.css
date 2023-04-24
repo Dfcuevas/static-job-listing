@@ -17,4 +17,12 @@ header img {
   flex-direction: column;
   gap: 1.5rem;
   background-color: var(--light-grayish-cyan);
+  position: relative;
+}
+
+@media (max-width: 550px) {
+  .jobs-container {
+    padding: 4rem 2rem;
+    gap: 45px;
+  }
 }
