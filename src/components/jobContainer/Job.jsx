@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./job.modules.css";
 
 const Job = ({ data }) => {
@@ -30,23 +30,6 @@ const Job = ({ data }) => {
     setDataJobs(data);
   };
 
-  /* const testClear = (e) => {
-    const textJob = e.target.parentElement.childNodes[0].textContent; // python
-
-    // comienza a filtrar del arreglo original data todos aquellos objetos que tengan de valor python. Lo que yo necesito es que en dataJobs se queden aquellos objetos que coincidan con los filtros aplicados.
-
-    const filteredJobs = data.filter(
-      (job) =>
-        job.role !== textJob &&
-        job.level !== textJob &&
-        !job.languages?.includes(textJob) &&
-        !job.tools?.includes(textJob)
-    );
-    setDataJobs([...dataJobs, ...filteredJobs].sort((a, b) => a.id - b.id));
-    setFilterData(...[filterData.filter((item) => item !== textJob)]);
-
-    
-  }; */
  
   return (
     <>
@@ -57,7 +40,7 @@ const Job = ({ data }) => {
               {filterData.map((item, id) => (
                 <span key={id}>
                   {item}
-                  <button onClick={(e) => testClear(e)}>x</button>
+                  <button>x</button>
                 </span>
               ))}
             </div>

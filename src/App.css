@@ -12,7 +12,7 @@ header img {
 }
 
 .jobs-container {
-  padding: 4rem 6rem;
+  padding: 7rem 6rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -22,7 +22,13 @@ header img {
 
 @media (max-width: 550px) {
   .jobs-container {
-    padding: 4rem 2rem;
+    padding: 7.5rem 2rem;
     gap: 45px;
+  }
+}
+
+@media (max-width: 390px) {
+  .jobs-container {
+    padding: 10.5rem 2rem;
   }
 }

@@ -90,8 +90,9 @@
   background-color: white;
   padding: 15px 30px;
   border-radius: 5px;
-  position: relative;
-  top: -90px;
+  position: absolute;
+  top: -30px;
+  width: 87%;
 }
 
 .filter-buttons button {
@@ -142,6 +143,15 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .filter-buttons {
+    width: 81%;
+  }
+
+  .filter-left-side {
+    flex-wrap: wrap;
+  }
+
   .right-side {
     flex-flow: wrap;
   }
@@ -152,6 +162,9 @@
     align-items: left;
   }
 
+  .filter-buttons {
+    width: 89%;
+  }
   .left-side {
     position: relative;
   }
@@ -171,6 +184,10 @@
   .container {
     padding: 30px 15px 15px;
     align-items: left;
+  }
+
+  .filter-buttons {
+    width: 83%;
   }
   .image-container {
     left: -5px;
